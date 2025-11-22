@@ -16,8 +16,14 @@ A Spring Boot application built using modern Java and Maven conventions. This pr
 - **JAR Packaging**  
   The application is packaged as an executable `.jar` for easy deployment.
 
+- **RabbitMQ 4.0.9**  
+  The application is using RabbitMQ as a message broker.Which will need **ErLang/otp version 27.1.3**
+
 - **`.properties` Configuration**  
   Spring Boot configuration is managed using `application.properties` files.
+
+- **AWS**
+  This application will be available under AWS platform.
 
 ---
 
@@ -66,6 +72,8 @@ Application configuration is handled via:
 ```
 src/main/resources/application.properties
 ```
+
+But centralised configuration would be used for common configuration properties
 
 You can configure:
 
